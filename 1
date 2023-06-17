@@ -1,0 +1,11 @@
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+const inputEmail = "example@example.com";
+if (validateEmail(inputEmail)) {
+    console.log(`${inputEmail} is a valid email address.`);
+} else {
+    console.log(`${inputEmail} is not a valid email address.`);
+}
